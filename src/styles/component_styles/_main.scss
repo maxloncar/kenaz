@@ -1,0 +1,1345 @@
+@import "./fonts";
+@import "./colors";
+
+@mixin listStyle {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@mixin whiteArrows {
+  position: absolute;
+  width: 36px;
+  height: 53px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@mixin yellowBrownArrows {
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+@mixin sliderArticles {
+  cursor: pointer;
+  position: relative;
+  width: 940px;
+  height: 425px;
+}
+
+@mixin form {
+  background: $socialHeadlineColor;
+  border: none;
+}
+
+@mixin formNameEmail {
+  @include form();
+  width: 293px;
+  height: 43px;
+}
+
+.news {
+  display: flex;
+
+  .main_news {
+    width: 620px;
+    margin-right: 17px;
+  }
+}
+
+main {
+  width: 1602px;
+  padding-top: 16px;
+  background-color: $mainBackgroundColor;
+  margin-top: 106px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_elements {
+  margin-left: 330px;
+}
+
+.big_banner {
+  width: 940px;
+  height: 124px;
+  background: $whiteColor;
+  border: 1px solid $bannerBorderColor;
+  box-sizing: border-box;
+
+  p {
+    width: 90px;
+    height: 35px;
+    @include varela14();
+    color: $bannerParagraphColor;
+    margin-top: 42px;
+    margin-left: 426px;
+    text-align: center;
+  }
+}
+
+.slider {
+  position: relative;
+  margin-top: 18px;
+  margin-bottom: 19px;
+  width: 940px;
+  height: 425px;
+
+  a {
+    @include listStyle();
+  }
+
+  .slider_background {
+    left: 0px;
+    margin-top: 32px;
+  }
+
+  .image {
+    width: 940px;
+    height: 425px;
+  }
+
+  .white_left_arrow {
+    top: 177px;
+    left: 28px;
+    @include whiteArrows();
+  }
+
+  .white_right_arrow {
+    left: 875px;
+    top: 177px;
+    @include whiteArrows();
+  }
+
+  .first_article {
+    background: url("../images/image1.svg");
+    @include sliderArticles();
+  }
+
+  .second_article {
+    background: url("../images/image2.svg");
+    @include sliderArticles();
+  }
+
+  .third_article {
+    background: url("../images/image3.jpg");
+    @include sliderArticles();
+  }
+
+  .fourth_article {
+    background: url("../images/image4.jpg");
+    @include sliderArticles();
+  }
+
+  .fifth_article {
+    background: url("../images/image5.jpg");
+    @include sliderArticles();
+  }
+
+  .data {
+    position: relative;
+    display: flex;
+    top: 248px;
+
+    .date {
+      width: 110px;
+      height: 14px;
+      margin: 2px 18px 2px 30px;
+      @include varela12();
+      color: $sliderImageTextColor;
+    }
+
+    img {
+      width: 16px;
+      height: 14px;
+      margin-right: 6px;
+    }
+
+    .comments {
+      margin-top: 2px;
+      margin-bottom: 2px;
+      @include varela12();
+      color: $sliderImageTextColor;
+      cursor: pointer;
+    }
+  }
+
+  h1 {
+    position: relative;
+    top: 250px;
+    width: 558px;
+    height: 92px;
+    font-family: $bitterFont;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: $whiteColor;
+  }
+
+  .read_article {
+    position: relative;
+    width: 123px;
+    height: 33px;
+    top: 250px;
+    margin-left: 29px;
+    @include varela14();
+    color: $sliderImageTextColor;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 1px solid $whiteColor;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+.short_news {
+  position: relative;
+  width: 612px;
+  height: 325px;
+  background: $whiteColor;
+  border-left: 10px solid $shortNewsBlueColor;
+  margin-bottom: 17px;
+
+  .short_news_headline {
+    display: flex;
+
+    h2 {
+      width: 94px;
+      height: 33px;
+      @include bitter24();
+      margin-top: 15px;
+      margin-left: 31px;
+    }
+
+    p {
+      width: 43px;
+      height: 17px;
+      @include varela14();
+      text-align: right;
+      color: $shortNewsBlueColor;
+      margin-left: 412px;
+      margin-top: 32px;
+      cursor: pointer;
+      border-bottom: 1px solid $seeAllBorderColor;
+      margin-bottom: 25px;
+    }
+
+    a {
+      @include listStyle();
+    }
+  }
+
+  .short_news_data {
+    display: flex;
+    position: relative;
+    float: left;
+
+    a {
+      @include listStyle();
+    }
+
+    .first_short_news {
+      width: 171px;
+      height: 218px;
+      margin-left: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+
+      img {
+        width: 170px;
+        height: 128px;
+      }
+    }
+
+    .short_news_date {
+      display: flex;
+      @include varela12();
+      color: $dateColor;
+      padding: 5px 0 5px 0;
+
+      :first-child {
+        margin-right: 33%;
+      }
+    }
+
+    .short_news_description {
+      @include bitter14();
+      width: 160px;
+      color: $blackColor;
+    }
+
+    .second_short_news {
+      cursor: pointer;
+      width: 170px;
+      height: 212px;
+      margin-right: 20px;
+    }
+
+    .third_short_news {
+      cursor: pointer;
+      width: 170px;
+      height: 211px;
+    }
+  }
+}
+
+.short_sport {
+  position: relative;
+  width: 612px;
+  height: 325px;
+  background: $whiteColor;
+  border-left: 10px solid $shortSportGreenColor;
+  margin-bottom: 19px;
+
+  .short_sport_headline {
+    display: flex;
+
+    h2 {
+      width: 94px;
+      height: 33px;
+      @include bitter24();
+      margin-top: 21px;
+      margin-left: 32px;
+    }
+
+    p {
+      width: 43px;
+      height: 17px;
+      @include varela14();
+      text-align: right;
+      color: $shortNewsBlueColor;
+      margin-left: 412px;
+      margin-top: 32px;
+      cursor: pointer;
+      border-bottom: 1px solid $seeAllBorderColor;
+      margin-bottom: 25px;
+    }
+
+    a {
+      @include listStyle();
+    }
+  }
+
+  .short_sport_data {
+    display: flex;
+    position: relative;
+    float: left;
+
+    a {
+      @include listStyle();
+    }
+
+    .first_short_sport {
+      width: 171px;
+      height: 218px;
+      margin-left: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+
+      img {
+        width: 170px;
+        height: 128px;
+      }
+    }
+
+    .short_sport_date {
+      display: flex;
+      @include varela12();
+      color: $dateColor;
+      padding: 5px 0 5px 0;
+
+      :first-child {
+        margin-right: 33%;
+      }
+    }
+
+    .short_sport_description {
+      @include bitter14();
+      width: 160px;
+      color: $blackColor;
+    }
+
+    .second_short_sport {
+      cursor: pointer;
+      width: 170px;
+      height: 212px;
+      margin-right: 20px;
+    }
+
+    .third_short_sport {
+      cursor: pointer;
+      width: 170px;
+      height: 211px;
+    }
+  }
+}
+
+.sidebar {
+  width: 303px;
+  height: 667px;
+  background: $blueSecNavColor;
+
+  a {
+    @include listStyle();
+  }
+
+  ul {
+    width: 302px;
+    height: 53px;
+    display: flex;
+    @include varela14();
+    background: $sidebarBackgroundColor;
+    color: $whiteColor;
+
+    :first-child {
+      width: 54px;
+      margin-left: 32px;
+    }
+
+    :nth-child(2) {
+      width: 69px;
+      margin-left: 23px;
+    }
+
+    :nth-child(3) {
+      width: 75px;
+      margin-left: 21px;
+    }
+
+    li {
+      list-style: none;
+      cursor: pointer;
+      margin: 18px 0 15px 0;
+      border-bottom: 1px solid $sidebarListBorderColor;
+
+      a {
+        @include listStyle();
+      }
+    }
+
+    .active {
+      color: $sidebarActiveListColor;
+      border-bottom: 1px solid $sidebarActiveListBorderColor;
+    }
+  }
+}
+
+.sidebar_news {
+  cursor: pointer;
+  display: flex;
+  width: 303px;
+  height: 117px;
+  border-bottom: 1px solid $sidebarNewsBorderColor;
+
+  .comments {
+    display: flex;
+
+    img {
+      width: 11px;
+      height: 10px;
+      margin: 23px 3px 0 154px;
+    }
+
+    p {
+      @include varela10();
+      color: $sidebarDateNumberOfCommentsColor;
+      margin-top: 21px;
+    }
+  }
+
+  .date_headline {
+    margin-left: 32px;
+    height: 52px;
+
+    p {
+      @include varela10();
+      color: $sidebarDateNumberOfCommentsColor;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      width: 165px;
+      color: $whiteColor;
+      font-family: $bitterFont;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .palestinians {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-right: 29px;
+    border: 3px solid $whiteColor;
+  }
+}
+
+.sidebar_news:hover {
+  background: $sidebarBackgroundColor;
+}
+
+.medium_banner {
+  width: 623px;
+  height: 123px;
+  background: $whiteColor;
+  border: 1px solid $bannerBorderColor;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+
+  p {
+    width: 90px;
+    height: 35px;
+    @include varela14();
+    color: $bannerParagraphColor;
+    margin-top: 41px;
+    margin-left: 266px;
+    text-align: center;
+  }
+}
+
+.short_business {
+  position: relative;
+  width: 612px;
+  height: 325px;
+  background: $whiteColor;
+  border-left: 10px solid $navBusinessBorderColor;
+  margin-bottom: 17px;
+  margin-top: 17px;
+
+  a {
+    @include listStyle();
+  }
+
+  .short_business_headline {
+    display: flex;
+
+    h2 {
+      width: 94px;
+      height: 33px;
+      @include bitter24();
+      margin-top: 15px;
+      margin-left: 31px;
+    }
+
+    p {
+      width: 43px;
+      height: 17px;
+      @include varela14();
+      text-align: right;
+      color: $shortNewsBlueColor;
+      margin-left: 412px;
+      margin-top: 32px;
+      cursor: pointer;
+      border-bottom: 1px solid $seeAllBorderColor;
+      margin-bottom: 25px;
+    }
+
+    a {
+      @include listStyle();
+    }
+  }
+
+  .business_news_rows {
+    display: flex;
+  }
+}
+
+.business_news {
+  width: 270px;
+  height: 90px;
+  margin-left: 31px;
+  margin-bottom: 30px;
+
+  .business_news_data {
+    display: flex;
+    cursor: pointer;
+
+    img {
+      width: 120px;
+      height: 90px;
+      margin-right: 15px;
+    }
+
+    .date_headline {
+      padding: 4px 0;
+      p {
+        @include varela12();
+        color: $dateColor;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        @include bitter14();
+        text-align: left;
+        color: $blackColor;
+      }
+    }
+  }
+}
+
+.new_carousel {
+  position: relative;
+  width: 612px;
+  height: 325px;
+  background: $whiteColor;
+  border-left: 10px solid $navTechBorderColor;
+  margin-bottom: 17px;
+  margin-top: 27px;
+
+  a {
+    @include listStyle();
+  }
+
+  .new_carousel_headline {
+    display: flex;
+
+    h2 {
+      width: 206px;
+      height: 33px;
+      @include bitter24();
+      margin-top: 15px;
+      margin-left: 31px;
+    }
+
+    img {
+      width: 16px;
+      height: 22px;
+    }
+
+    .yellow_left_arrow {
+      margin-left: 301px;
+      @include yellowBrownArrows();
+    }
+
+    .yellow_right_arrow {
+      margin-left: 14px;
+      @include yellowBrownArrows();
+    }
+  }
+
+  .carousel_slider {
+    width: 582px;
+  }
+
+  .carousel {
+    float: left;
+    width: 260px;
+    height: 219px;
+    margin: 30px 0px 0 30px;
+    cursor: pointer;
+
+    img {
+      margin-bottom: 9px;
+    }
+
+    p {
+      @include varela12();
+      color: $dateColor;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      @include bitter14();
+      text-align: left;
+      width: 260px;
+      color: $blackColor;
+    }
+  }
+}
+
+.editorials {
+  width: 293px;
+  height: 325px;
+  background: $whiteColor;
+  border-left: 10px solid $navTravelBorderColor;
+  margin-right: 17px;
+  margin-bottom: 16px;
+
+  a {
+    @include listStyle();
+  }
+
+  .editorials_headline {
+    display: flex;
+
+    h2 {
+      width: 147px;
+      height: 33px;
+      margin-top: 15px;
+      margin-left: 31px;
+      @include bitter24();
+    }
+
+    img {
+      width: 16px;
+      height: 22px;
+    }
+
+    .brown_left_arrow {
+      margin-left: 40px;
+      @include yellowBrownArrows();
+    }
+
+    .brown_right_arrow {
+      margin-left: 12px;
+      @include yellowBrownArrows();
+    }
+  }
+
+  .editorial {
+    float: left;
+    width: 231px;
+    height: 219px;
+    margin: 30px 0px 0 30px;
+    cursor: pointer;
+
+    img {
+      margin-bottom: 9px;
+    }
+
+    p {
+      @include varela12();
+      color: $dateColor;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      @include bitter14();
+      text-align: left;
+      width: 260px;
+      color: $blackColor;
+    }
+  }
+}
+
+.editorials_local_news {
+  display: flex;
+}
+
+.social {
+  width: 301px;
+  height: 191px;
+  margin: 28px 0 17px 1px;
+
+  h2 {
+    width: 101px;
+    height: 33px;
+    @include bitter24();
+    margin-left: 3px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social_headline {
+    width: 123px;
+    height: 40px;
+    background: $socialHeadlineColor;
+
+    h3 {
+      @include bitter18();
+      font-weight: bold;
+      line-height: 18px;
+      color: $sectionHeaderColor;
+      margin-left: 15px;
+      margin-top: 13px;
+    }
+  }
+
+  .social_fans {
+    width: 142px;
+    height: 40px;
+    background: $blueSecNavColor;
+
+    p {
+      @include varela14();
+      align-items: flex-end;
+      color: $whiteColor;
+      margin-left: 16px;
+      margin-top: 12px;
+    }
+  }
+
+  .like {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  .follow {
+    display: flex;
+    margin-top: 9px;
+  }
+
+  .subscribe {
+    display: flex;
+    margin-top: 9px;
+  }
+}
+
+.video {
+  width: 303px;
+  height: 324px;
+  background: $whiteColor;
+  position: relative;
+  margin-bottom: 18px;
+
+  h2 {
+    width: 141px;
+    height: 33px;
+    @include bitter24();
+    margin: 0 0 31px 33px;
+    padding-top: 15px;
+  }
+
+  .video_image {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 149px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rectangle {
+    position: absolute;
+    width: 62px;
+    height: 43px;
+    left: 121px;
+    top: 133px;
+    cursor: pointer;
+  }
+
+  .play {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 142px;
+    top: 144px;
+    cursor: pointer;
+  }
+
+  .video_data {
+    width: 260px;
+    height: 54px;
+    margin-top: 17px;
+    margin-left: 32px;
+
+    p {
+      @include varela12();
+      color: $dateColor;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      @include bitter14();
+      text-align: left;
+    }
+  }
+}
+
+.small_banner {
+  width: 128px;
+  height: 128px;
+  background: $whiteColor;
+  border: 1px solid $bannerBorderColor;
+  box-sizing: border-box;
+  margin-top: 19px;
+
+  p {
+    width: 90px;
+    height: 35px;
+    @include varela14();
+    text-align: center;
+    color: $bannerParagraphColor;
+    margin: 43px 19px 50px 19px;
+  }
+}
+
+.two_small_banners {
+  display: flex;
+  width: 303px;
+  height: 167px;
+  background: $socialHeadlineColor;
+  margin-bottom: 17px;
+
+  :first-child {
+    margin-left: 21px;
+    margin-right: 7px;
+  }
+}
+
+.facebook {
+  width: 303px;
+  height: 556px;
+  background: $whiteColor;
+
+  img {
+    width: 270px;
+    height: 521px;
+    margin: 15px 16px 20px 17px;
+  }
+}
+
+.gallery {
+  position: relative;
+  width: 940px;
+  height: 403px;
+  margin-top: 17px;
+  padding-bottom: 19px;
+
+  .gallery_background {
+    position: absolute;
+    width: 940px;
+    height: 219px;
+    top: 44.9%;
+  }
+
+  .gallery_image {
+    :first-child {
+      width: 940px;
+      height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .white_left_arrow {
+    @include whiteArrows();
+    left: 29px;
+    top: 125px;
+  }
+
+  .search {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 441px;
+    top: 121px;
+    cursor: pointer;
+  }
+
+  .white_right_arrow {
+    @include whiteArrows();
+    left: 876px;
+    top: 125px;
+  }
+}
+
+.slick-dots.slick-thumb {
+  top: 261px;
+  height: 120px !important;
+
+  li {
+    width: 120px;
+    height: 120px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .slick-active {
+    border: 3px solid $whiteColor;
+  }
+}
+
+.main_content {
+  width: 622px;
+  height: 2603px;
+  background: $whiteColor;
+  margin-bottom: 17px;
+
+  .article_headline {
+    @include bitter24();
+    width: 94px;
+    height: 33px;
+    align-items: flex-end;
+    padding-top: 15px;
+    margin-left: 31px;
+    padding-bottom: 12px;
+  }
+
+  .main_content_news {
+    width: 622px;
+    height: 382px;
+    margin-top: 26px;
+    border-bottom: 2px solid $socialHeadlineColor;
+
+    h2 {
+      width: 496px;
+      height: 56px;
+      @include bitter24();
+      margin-left: 31px;
+    }
+
+    .article_data {
+      display: flex;
+      margin-top: 13px;
+      margin-bottom: 7px;
+      margin-left: 31px;
+
+      p {
+        @include varela12();
+        align-items: flex-end;
+        color: $dateColor;
+        margin-top: 3px;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+      }
+
+      :nth-child(2) {
+        width: 126px;
+        height: 14px;
+        margin-right: 6px;
+      }
+
+      :nth-child(3) {
+        width: 146px;
+        height: 14px;
+        margin-right: 5px;
+      }
+
+      :nth-child(4) {
+        width: 80px;
+        height: 14px;
+      }
+    }
+
+    .article_image_text {
+      display: flex;
+      margin-left: 31px;
+
+      img {
+        width: 170px;
+        height: 128px;
+        margin-top: 9px;
+        margin-right: 20px;
+      }
+
+      p {
+        width: 373px;
+        height: 176px;
+        font-family: $bitterFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        align-items: center;
+        color: $articleTextColor;
+      }
+    }
+
+    button {
+      width: 123px;
+      height: 33px;
+      background: $blueSecNavColor;
+      @include varela14();
+      align-items: flex-end;
+      color: $whiteColor;
+      cursor: pointer;
+      margin-top: 16px;
+      margin-left: 220px;
+    }
+
+    .empty_rectangle {
+      width: 607px;
+      height: 42px;
+      margin: 10px 0 10px 14px;
+    }
+  }
+
+  .page_buttons {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 28px;
+
+    .page_button {
+      width: 33px;
+      height: 32px;
+      background: $socialHeadlineColor;
+      margin-right: 4px;
+      border: none;
+      @include varela14();
+      align-items: flex-end;
+      color: $blueSecNavColor;
+      cursor: pointer;
+    }
+
+    .active_button {
+      background: $blueSecNavColor;
+      color: $whiteColor;
+    }
+  }
+}
+
+.title_image {
+  width: 940px;
+  height: 588px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  background: url("../images/title_image.svg");
+
+  .title_data {
+    color: $titleImageTextColor;
+    width: 751px;
+    height: 144px;
+    padding-top: 411px;
+    padding-left: 30px;
+    position: absolute;
+    z-index: 10;
+
+    p {
+      @include varela12();
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: $bitterFont;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 53px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+
+  img {
+    width: 964px;
+    height: 258px;
+    position: absolute;
+    left: 330px;
+    top: 595px;
+  }
+}
+
+.single_news {
+  width: 622px;
+  height: 953px;
+  background: $whiteColor;
+  margin-bottom: 18px;
+
+  p {
+    font-family: $bitterFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    align-items: center;
+    color: $articleTextColor;
+  }
+
+  :first-child {
+    width: 572px;
+    height: 199px;
+    padding-top: 37px;
+    padding-left: 30px;
+    margin-bottom: 42px;
+  }
+
+  :nth-child(3) {
+    width: 584px;
+    height: 177px;
+    margin-top: 37px;
+    margin-left: 31px;
+    margin-bottom: 44px;
+  }
+
+  :nth-child(4) {
+    margin-left: 14px;
+  }
+}
+
+.about_author {
+  width: 622px;
+  height: 222px;
+  background: $whiteColor;
+  margin-bottom: 18px;
+
+  h2 {
+    width: 241px;
+    height: 33px;
+    @include bitter24();
+    align-items: flex-end;
+    padding: 18px 0 0 31px;
+    margin-bottom: 30px;
+  }
+
+  .author_data {
+    display: flex;
+    margin: 0 26px 0 31px;
+
+    img {
+      margin-right: 20px;
+    }
+
+    p {
+      width: 435px;
+      height: 100px;
+      @include varela13();
+    }
+  }
+}
+
+.comment_section {
+  width: 622px;
+  height: 1015px;
+  background: $whiteColor;
+  margin-bottom: 45px;
+
+  h2 {
+    @include bitter24();
+    align-items: flex-end;
+  }
+
+  .comments_headline {
+    width: 157px;
+    height: 33px;
+    padding-top: 15px;
+    margin-left: 32px;
+    margin-bottom: 43px;
+  }
+
+  .profile_comments {
+    width: 561px;
+    height: 364px;
+    margin-bottom: 26px;
+
+    .comment {
+      display: flex;
+      margin-bottom: 47.5px;
+
+      img {
+        width: 57px;
+        height: 58px;
+        margin-left: 31px;
+        cursor: pointer;
+      }
+
+      .profile_comment {
+        .name_date {
+          display: flex;
+
+          h3 {
+            @include bitter18();
+            font-weight: normal;
+            line-height: 20px;
+            color: $blueSecNavColor;
+            margin-left: 16px;
+            margin-bottom: 3.5px;
+            width: 120px;
+            height: 20px;
+            cursor: pointer;
+          }
+
+          .comment_date {
+            width: 151px;
+            height: 20px;
+            font-family: $varelaRoundFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 20px;
+            align-items: center;
+            color: $dateColor;
+            margin-left: 10px;
+          }
+
+          .reply {
+            width: 67px;
+            height: 17px;
+            @include varela14();
+            align-items: flex-end;
+            text-align: right;
+            color: $blueSecNavColor;
+            margin-left: 155px;
+            cursor: pointer;
+          }
+        }
+
+        .comment_text {
+          width: 502px;
+          height: 60px;
+          @include varela13();
+          margin-left: 17px;
+        }
+      }
+    }
+  }
+  .add_comment_headline {
+    width: 264px;
+    height: 33px;
+    margin-left: 31px;
+  }
+}
+
+.comment_form {
+  width: 562px;
+  height: 437px;
+  margin-top: 34px;
+  margin-left: 30px;
+
+  p {
+    width: 569px;
+    height: 60px;
+    @include varela13();
+    margin-bottom: 25.5px;
+  }
+
+  form {
+    .form_name {
+      @include formNameEmail();
+      margin-bottom: 8px;
+      padding-left: 10px;
+    }
+
+    .form_email {
+      @include formNameEmail();
+      margin-bottom: 7px;
+      padding-left: 10px;
+    }
+
+    .form_comment {
+      width: 552px;
+      height: 177px;
+      @include form();
+      margin-bottom: 18px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+
+    ::placeholder {
+      padding-left: 8px;
+      @include varela14();
+      align-items: flex-end;
+      color: $dateColor;
+    }
+
+    button {
+      position: relative;
+      width: 153px;
+      height: 53px;
+      background: $blueSecNavColor;
+      @include varela14();
+      align-items: flex-end;
+      text-align: center;
+      color: $whiteColor;
+      cursor: pointer;
+    }
+  }
+}

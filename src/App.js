@@ -1,23 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Home";
-import NewsPage from "./pages/News";
-import SportPage from "./pages/Sport";
-import BusinessPage from "./pages/Business";
+import CategoryPage from "./pages/Category";
 import SinglePage from "./pages/Single";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/header/Navigation";
 
 function App() {
   return (
-    <div>
+    <>
       <Navigation />
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/news" element={<NewsPage />} />
-        <Route path="/sport" element={<SportPage />} />
-        <Route path="/business" element={<BusinessPage />} />
-        <Route path="/single-article" element={<SinglePage />} />
+        <Route path="/category" element={<CategoryPage />} />
+        <Route path="/single" element={<SinglePage />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

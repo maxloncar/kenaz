@@ -1,0 +1,93 @@
+$bitterFont: "Bitter", serif;
+$varelaRoundFont: "Varela Round", sans-serif;
+
+@mixin headerVarelaRoundFont {
+  font-family: $bitterFont;
+  font-style: normal;
+  color: $whiteColor;
+}
+
+@mixin varela16 {
+  font-family: $varelaRoundFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin varela14 {
+  font-family: $varelaRoundFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin varela13 {
+  font-family: $varelaRoundFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  align-items: center;
+  color: $articleTextColor;
+}
+
+@mixin varela12 {
+  font-family: $varelaRoundFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@include varela10 {
+  font-family: $varelaRoundFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@mixin bitter24Footer {
+  font-family: $bitterFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin bitter24 {
+  font-family: $bitterFont;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $sectionHeaderColor;
+}
+
+@mixin bitter18 {
+  font-family: $bitterFont;
+  font-style: normal;
+  font-size: 18px;
+  align-items: center;
+}
+
+@mixin bitter14 {
+  font-family: $bitterFont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+@mixin bitter14Footer {
+  font-family: $bitterFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}

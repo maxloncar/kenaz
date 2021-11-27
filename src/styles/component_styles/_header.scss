@@ -1,0 +1,173 @@
+@import "./colors";
+@import "./fonts";
+
+.header {
+    width: 1602px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .firstNav {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background: $darkNavigationColor;
+  
+    .logo {
+      position: relative;
+      cursor: pointer;
+      margin-left: 330px;
+      margin-right: 9px;
+      width: 63px;
+      height: 53px;
+      background-color: $darkBackgroundLogoColor;
+  
+      img {
+        padding-top: 15px;
+        padding-left: 23px;
+        width: 14px;
+        height: 21px;
+        cursor: pointer;
+      }
+    }
+  
+    .title {
+      height: 53px;
+  
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        color: $whiteColor;
+      }
+  
+      h1 {
+        width: 100px;
+        height: 27px;
+        @include headerVarelaRoundFont();
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 27px;
+        align-items: center;
+        margin-right: 447px;
+        margin-top: 16.5px;
+        margin-bottom: 9.5px;
+      }
+    }
+  
+    .first_nav_links {
+      font-family: $varelaRoundFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 27px;
+      align-items: center;
+      color: $whiteColor;
+  
+      li {
+        display: inline-block;
+  
+        a {
+          list-style-type: none;
+          text-decoration: none;
+          color: $whiteColor;
+        }
+      }
+  
+      li:first-child {
+        width: 70px;
+        height: 27px;
+        margin: 14.5px 6px 11.5px 0;
+      }
+  
+      :nth-child(2) {
+        width: 97px;
+        height: 27px;
+        margin: 14.5px 9px 11.5px 0;
+      }
+  
+      :nth-child(3) {
+        width: 83px;
+        height: 27px;
+        margin: 14.5px 0px 11.5px 0;
+      }
+    }
+  
+    .search_bar {
+      width: 62px;
+      height: 53px;
+      background-color: $darkBackgroundLogoColor;
+  
+      img {
+        width: 16px;
+        height: 16px;
+        padding-top: 18px;
+        padding-left: 23px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .secondNav {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background: $blueSecNavColor;
+  
+    .second_nav_links {
+      margin-left: 330px;
+      @include headerVarelaRoundFont();
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      text-align: center;
+  
+      li {
+        display: inline-block;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 53px;
+        padding-top: 15.7px;
+  
+        a {
+          list-style-type: none;
+          text-decoration: none;
+          color: $whiteColor;
+        }
+      }
+  
+      li:first-child {
+        width: 96px;
+        background: $navNewsBackgroundColor;
+      }
+  
+      :nth-child(2) {
+        width: 132px;
+        border-bottom: 6px solid $navBusinessBorderColor;
+      }
+  
+      :nth-child(3) {
+        width: 100px;
+        border-bottom: 6px solid $navSportBorderColor;
+      }
+  
+      :nth-child(4) {
+        width: 81px;
+        border-bottom: 6px solid $navLifeBorderColor;
+      }
+  
+      :nth-child(5) {
+        width: 91px;
+        border-bottom: 6px solid $navTechBorderColor;
+      }
+  
+      :nth-child(6) {
+        width: 113px;
+        border-bottom: 6px solid $navTravelBorderColor;
+      }
+    }
+  }

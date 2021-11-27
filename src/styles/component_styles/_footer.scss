@@ -1,0 +1,554 @@
+@import "./fonts";
+@import "./colors";
+
+@mixin rowTag {
+  display: flex;
+  cursor: pointer;
+}
+
+@mixin rowTagDiv {
+  background: $footerBotRowBorderColor;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.footer {
+  width: 1604px;
+  height: 934px;
+
+  .footer_rectangle {
+    width: 1602px;
+    height: 23px;
+    background: $blueSecNavColor;
+  }
+
+  .footer_big_rectangle {
+    width: 1602px;
+    height: 992px;
+    background: $darkNavigationColor;
+
+    .top_row {
+      display: flex;
+
+      .kenaz {
+        width: 302px;
+        height: 167px;
+        padding-top: 57px;
+        margin-left: 330px;
+
+        .kenaz_logo {
+          display: flex;
+
+          img {
+            width: 28px;
+            height: 43px;
+            margin-left: 3px;
+            margin-bottom: 23px;
+          }
+
+          h2 {
+            width: 143.56px;
+            font-family: $bitterFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 29.623px;
+            line-height: 52px;
+            align-items: center;
+            color: $footerLogoColor;
+            margin-left: 18px;
+          }
+        }
+
+        p {
+          width: 303px;
+          height: 40px;
+          @include bitter14Footer();
+          color: $dateColor;
+          margin-bottom: 23px;
+        }
+
+        .social_medias {
+          img {
+            margin-right: 3px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .newsletter {
+        width: 302px;
+        height: 169px;
+        margin-top: 70px;
+        margin-left: 18px;
+
+        ::placeholder {
+          padding-top: 15px;
+          padding-left: 21px;
+          @include varela16();
+          align-items: flex-end;
+          color: $bannerParagraphColor;
+        }
+
+        h2 {
+          width: 163px;
+          @include bitter24Footer();
+          color: $footerTextColor;
+          margin-bottom: 25px;
+        }
+
+        p {
+          width: 303px;
+          height: 40px;
+          @include bitter14Footer();
+          color: $dateColor;
+          margin-bottom: 25px;
+        }
+
+        .email {
+          display: flex;
+
+          input {
+            width: 183px;
+            height: 53px;
+            background: $footerBotRowBorderColor;
+            border: 0;
+            padding-left: 10px;
+          }
+
+          input,
+          select,
+          textarea {
+            color: $whiteColor;
+          }
+
+          button {
+            width: 112px;
+            height: 53px;
+            background: $blueSecNavColor;
+            @include varela16();
+            color: $footerTextColor;
+            border: 0;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .tags_widget {
+        width: 303px;
+        height: 174px;
+        margin-top: 70px;
+        margin-left: 17px;
+
+        h2 {
+          width: 178px;
+          @include bitter24Footer();
+          color: $footerTextColor;
+          margin-bottom: 31px;
+        }
+
+        p {
+          font-family: $varelaRoundFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          color: $dateColor;
+          margin-top: 4px;
+          margin-left: 13px;
+          text-align: center;
+        }
+
+        .first_row_tag {
+          @include rowTag();
+
+          div {
+            @include rowTagDiv();
+          }
+
+          div:hover {
+            background: $blueSecNavColor;
+
+            p {
+              color: $footerTextColor;
+            }
+          }
+
+          .first {
+            width: 83px;
+            height: 28px;
+
+            p {
+              width: 58px;
+              height: 20px;
+            }
+          }
+
+          .second {
+            width: 76px;
+            height: 28px;
+
+            p {
+              width: 53px;
+              height: 20px;
+            }
+          }
+
+          .third {
+            width: 56px;
+            height: 28px;
+
+            p {
+              width: 35px;
+              height: 20px;
+            }
+          }
+
+          .fourth {
+            width: 62px;
+            height: 28px;
+
+            p {
+              width: 39px;
+              height: 20px;
+            }
+          }
+        }
+
+        .second_row_tag {
+          @include rowTag();
+
+          div {
+            @include rowTagDiv();
+          }
+
+          div:hover {
+            background: $blueSecNavColor;
+
+            p {
+              color: $footerTextColor;
+            }
+          }
+
+          .first {
+            width: 56px;
+            height: 28px;
+
+            p {
+              width: 35px;
+              height: 20px;
+            }
+          }
+
+          .second {
+            width: 83px;
+            height: 28px;
+
+            p {
+              width: 58px;
+              height: 20px;
+            }
+          }
+
+          .third {
+            width: 39px;
+            height: 28px;
+
+            p {
+              width: 16px;
+              height: 20px;
+            }
+          }
+
+          .fourth {
+            width: 83px;
+            height: 28px;
+
+            p {
+              width: 58px;
+              height: 20px;
+            }
+          }
+        }
+
+        .third_row_tag {
+          @include rowTag();
+
+          div {
+            @include rowTagDiv();
+          }
+
+          div:hover {
+            background: $blueSecNavColor;
+
+            p {
+              color: $footerTextColor;
+            }
+          }
+
+          .first {
+            width: 83px;
+            height: 27px;
+
+            p {
+              width: 58px;
+              height: 20px;
+            }
+          }
+
+          .second {
+            width: 76px;
+            height: 27px;
+
+            p {
+              width: 53px;
+              height: 20px;
+            }
+          }
+
+          .third {
+            width: 56px;
+            height: 27px;
+
+            p {
+              width: 35px;
+              height: 20px;
+            }
+          }
+
+          .fourth {
+            width: 82px;
+            height: 27px;
+
+            p {
+              width: 58px;
+              height: 20px;
+            }
+          }
+        }
+
+        .fourth_row_tag {
+          @include rowTag();
+
+          div {
+            @include rowTagDiv();
+          }
+
+          div:hover {
+            background: $blueSecNavColor;
+
+            p {
+              color: $footerTextColor;
+            }
+          }
+
+          .first {
+            width: 77px;
+            height: 29px;
+
+            p {
+              width: 53px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .mid_row {
+      display: flex;
+      margin-bottom: 67px;
+
+      .post {
+        width: 303px;
+        height: 98px;
+        display: flex;
+        border-bottom: 1px solid $postBorderColor;
+        margin-bottom: 17px;
+
+        .post_text {
+          width: 233px;
+          height: 52px;
+
+          .post_date {
+            display: flex;
+
+            p {
+              font-family: $varelaRoundFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 12px;
+              color: $dateColor;
+              padding-bottom: 5px;
+            }
+
+            :first-child {
+              margin-right: 115px;
+            }
+          }
+
+          h3 {
+            @include bitter14();
+            text-align: left;
+            color: $whiteColor;
+            width: 180px;
+          }
+        }
+
+        .post_image {
+          width: 77px;
+          height: 77px;
+          background: $whiteColor;
+          box-shadow: 0px 1px 1px $postImageShadowColor;
+
+          img {
+            position: relative;
+            top: 4px;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .featured {
+        width: 303px;
+        height: 364px;
+        margin-top: 84px;
+        margin-left: 330px;
+        margin-right: 19px;
+
+        h2 {
+          width: 137px;
+          height: 33px;
+          @include bitter24Footer();
+          color: $whiteColor;
+          margin-left: 2px;
+          margin-bottom: 25px;
+        }
+
+        :nth-child(4) {
+          border: 0;
+        }
+      }
+
+      .random_posts {
+        width: 303px;
+        height: 364px;
+        margin-top: 84px;
+        margin-right: 16px;
+
+        h2 {
+          width: 197px;
+          height: 33px;
+          @include bitter24Footer();
+          color: $whiteColor;
+          margin-left: 2px;
+          margin-bottom: 25px;
+        }
+
+        :nth-child(4) {
+          border: 0;
+        }
+      }
+
+      .twitter_feed {
+        width: 296px;
+        height: 320px;
+        margin-top: 84px;
+
+        h2 {
+          width: 181px;
+          height: 33px;
+          @include bitter24Footer();
+          color: $whiteColor;
+          margin-left: 1px;
+          margin-bottom: 20px;
+        }
+
+        .twitter_posts {
+          img {
+            width: 24px;
+            height: 18px;
+            margin-right: 4px;
+          }
+
+          .name_logo {
+            display: flex;
+            margin-bottom: 1.5px;
+
+            p {
+              width: 139px;
+              height: 16px;
+              font-family: $bitterFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 16px;
+              color: $dateColor;
+            }
+          }
+
+          .twitter_post {
+            font-family: $varelaRoundFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            color: $footerTextColor;
+          }
+
+          .first_twitter_post {
+            width: 296px;
+            height: 94px;
+            margin-bottom: 26px;
+
+            .twitter_post {
+              width: 326px;
+              height: 54px;
+            }
+          }
+
+          .second_twitter_post {
+            width: 213px;
+            height: 58px;
+            margin-bottom: 33px;
+
+            .twitter_post {
+              width: 243px;
+              height: 36px;
+            }
+          }
+        }
+      }
+    }
+
+    .bot_row {
+      .bottom {
+        display: flex;
+        width: 1603px;
+        height: 36px;
+        border-top: 3px solid $footerBotRowBorderColor;
+
+        :first-child {
+          width: 408px;
+          height: 14px;
+          @include varela12();
+          color: $bannerParagraphColor;
+          margin-top: 18px;
+          margin-left: 333px;
+        }
+
+        :nth-child(2) {
+          width: 342px;
+          height: 14px;
+          @include varela12();
+          align-items: flex-end;
+          text-align: right;
+          color: $bannerParagraphColor;
+          margin-top: 19px;
+          margin-left: 188px;
+        }
+      }
+    }
+  }
+}
