@@ -19,33 +19,31 @@ function HomePage() {
   return (
     <>
       <main>
-        <section className="main_elements">
-          <BigBanner />
-          <SliderImage />
-          <section className="news">
-            <div className="main_news">
-              <ShortNews />
-              <ShortSport />
-              <MediumBanner />
-              <ShortBusiness />
-              <MediumBanner />
-              <NewCarousel />
-              <div className="editorials_local_news">
-                <Editorials />
-                <LocalNews />
-              </div>
+        <BigBanner />
+        <SliderImage />
+        <section className="news">
+          <div className="main_news">
+            <ShortNews />
+            <ShortSport />
+            <MediumBanner />
+            <ShortBusiness />
+            <MediumBanner />
+            <NewCarousel />
+            <div className="editorials_local_news">
+              <Editorials />
+              <LocalNews />
             </div>
-            <div className="side_news">
-              <Sidebar />
-              <Social />
-              <Video />
-              <TwoSmallBanners />
-              <Facebook />
-            </div>
-          </section>
-          <BigBanner />
-          <Gallery />
+          </div>
+          <div className="side_news">
+            <Sidebar />
+            <Social />
+            <Video />
+            <TwoSmallBanners />
+            <Facebook />
+          </div>
         </section>
+        <BigBanner />
+        <Gallery />
       </main>
       <footer>
         <Footer />

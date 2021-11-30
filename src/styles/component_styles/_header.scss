@@ -2,7 +2,7 @@
 @import "./fonts";
 
 .header {
-    width: 1602px;
+    width: 100%;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -12,13 +12,13 @@
   .firstNav {
     display: flex;
     align-items: center;
-    height: 53px;
+    justify-content: center;
+    min-height: 53px;
     background: $darkNavigationColor;
   
     .logo {
       position: relative;
       cursor: pointer;
-      margin-left: 330px;
       margin-right: 9px;
       width: 63px;
       height: 53px;
@@ -50,7 +50,7 @@
         font-size: 24px;
         line-height: 27px;
         align-items: center;
-        margin-right: 447px;
+        margin-right: 441px;
         margin-top: 16.5px;
         margin-bottom: 9.5px;
       }
@@ -112,11 +112,15 @@
   .secondNav {
     display: flex;
     align-items: center;
-    height: 53px;
+    min-height: 53px;
     background: $blueSecNavColor;
+
+    .secondNavigation {
+      width: 940px;
+      margin: 0 auto;
+    }
   
     .second_nav_links {
-      margin-left: 330px;
       @include headerVarelaRoundFont();
       font-weight: bold;
       font-size: 18px;
@@ -130,7 +134,7 @@
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        height: 53px;
+        min-height: 53px;
         padding-top: 15.7px;
   
         a {

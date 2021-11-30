@@ -37,43 +37,46 @@
   height: 43px;
 }
 
+body {
+  background-color: $mainBackgroundColor;
+}
+
 .news {
   display: flex;
 
   .main_news {
-    width: 620px;
+    max-width: 620px;
     margin-right: 17px;
   }
 }
 
 main {
-  width: 1602px;
+  max-width: 940px;
   padding-top: 16px;
   background-color: $mainBackgroundColor;
   margin-top: 106px;
   justify-content: center;
   align-items: center;
-}
-
-.main_elements {
-  margin-left: 330px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .big_banner {
-  width: 940px;
+  width: 100%;
   height: 124px;
   background: $whiteColor;
   border: 1px solid $bannerBorderColor;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
   p {
-    width: 90px;
-    height: 35px;
     @include varela14();
     color: $bannerParagraphColor;
-    margin-top: 42px;
-    margin-left: 426px;
     text-align: center;
+    margin: 0 auto;
+    width: 90px;
   }
 }
 
@@ -486,21 +489,22 @@ main {
 }
 
 .medium_banner {
-  width: 623px;
+  width: 100%;
   height: 123px;
   background: $whiteColor;
   border: 1px solid $bannerBorderColor;
   box-sizing: border-box;
   margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   p {
     width: 90px;
-    height: 35px;
     @include varela14();
     color: $bannerParagraphColor;
-    margin-top: 41px;
-    margin-left: 266px;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -852,29 +856,29 @@ main {
   background: $whiteColor;
   border: 1px solid $bannerBorderColor;
   box-sizing: border-box;
-  margin-top: 19px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 
   p {
     width: 90px;
-    height: 35px;
     @include varela14();
     text-align: center;
     color: $bannerParagraphColor;
-    margin: 43px 19px 50px 19px;
+    margin: 0 auto;
   }
 }
 
 .two_small_banners {
+  box-sizing: border-box;
   display: flex;
-  width: 303px;
+  width: 100%;
   height: 167px;
   background: $socialHeadlineColor;
   margin-bottom: 17px;
-
-  :first-child {
-    margin-left: 21px;
-    margin-right: 7px;
-  }
+  grid-gap: 9px;
+  padding-top: 19px;
+  padding-left: 21px;
 }
 
 .facebook {
@@ -958,6 +962,10 @@ main {
   height: 2603px;
   background: $whiteColor;
   margin-bottom: 17px;
+
+  a {
+    @include listStyle();
+  }
 
   .article_headline {
     @include bitter24();
@@ -1053,6 +1061,7 @@ main {
       cursor: pointer;
       margin-top: 16px;
       margin-left: 220px;
+      border: none;
     }
 
     .empty_rectangle {
@@ -1340,6 +1349,7 @@ main {
       text-align: center;
       color: $whiteColor;
       cursor: pointer;
+      border: none;
     }
   }
 }

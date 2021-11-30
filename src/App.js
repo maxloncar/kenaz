@@ -6,14 +6,14 @@ import Navigation from "./components/header/Navigation";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navigation />
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/category" element={<CategoryPage />} />
         <Route path="/single" element={<SinglePage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

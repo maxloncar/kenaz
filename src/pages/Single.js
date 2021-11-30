@@ -15,24 +15,22 @@ function SinglePage() {
   return (
     <>
       <main>
-        <section className="main_elements">
-          <BigBanner />
-          <TitleImage />
-          <section className="news">
-            <div className="main_news">
-              <SingleNews />
-              <MediumBanner />
-              <AboutAuthor />
-              <CommentSection />
-            </div>
-            <div className="side_news">
-              <Sidebar />
-              <Social />
-              <Video />
-              <TwoSmallBanners />
-              <Facebook />
-            </div>
-          </section>
+        <BigBanner />
+        <TitleImage />
+        <section className="news">
+          <div className="main_news">
+            <SingleNews />
+            <MediumBanner />
+            <AboutAuthor />
+            <CommentSection />
+          </div>
+          <div className="side_news">
+            <Sidebar />
+            <Social />
+            <Video />
+            <TwoSmallBanners />
+            <Facebook />
+          </div>
         </section>
       </main>
       <footer>

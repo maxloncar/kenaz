@@ -13,22 +13,20 @@ function CategoryPage() {
   return (
     <>
       <main>
-        <section className="main_elements">
-          <BigBanner />
-          <SliderImage />
-          <section className="news">
-            <div className="main_news">
-              <MainContent />
-              <MediumBanner />
-            </div>
-            <div className="side_news">
-              <Sidebar />
-              <Social />
-              <Video />
-              <TwoSmallBanners />
-              <Facebook />
-            </div>
-          </section>
+        <BigBanner />
+        <SliderImage />
+        <section className="news">
+          <div className="main_news">
+            <MainContent />
+            <MediumBanner />
+          </div>
+          <div className="side_news">
+            <Sidebar />
+            <Social />
+            <Video />
+            <TwoSmallBanners />
+            <Facebook />
+          </div>
         </section>
       </main>
       <footer>

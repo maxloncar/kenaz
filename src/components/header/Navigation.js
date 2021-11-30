@@ -31,26 +31,28 @@ function Navigation() {
         </div>
       </header>
       <nav className="secondNav">
-        <ul className="second_nav_links">
-          <li>
-            <Link to="/category">NEWS</Link>
-          </li>
-          <li>
-            <Link to="/category">BUSINESS</Link>
-          </li>
-          <li>
-            <Link to="/category">SPORT</Link>
-          </li>
-          <li>
-            <Link to="/category">LIFE</Link>
-          </li>
-          <li>
-            <Link to="/category">TECH</Link>
-          </li>
-          <li>
-            <Link to="/category">TRAVEL</Link>
-          </li>
-        </ul>
+        <div className="secondNavigation">
+          <ul className="second_nav_links">
+            <li>
+              <Link to="/category">NEWS</Link>
+            </li>
+            <li>
+              <Link to="/category">BUSINESS</Link>
+            </li>
+            <li>
+              <Link to="/category">SPORT</Link>
+            </li>
+            <li>
+              <Link to="/category">LIFE</Link>
+            </li>
+            <li>
+              <Link to="/category">TECH</Link>
+            </li>
+            <li>
+              <Link to="/category">TRAVEL</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   );

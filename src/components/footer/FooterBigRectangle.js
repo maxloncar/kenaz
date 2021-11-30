@@ -1,4 +1,3 @@
-import Bottom from "./Bottom";
 import Featured from "./Featured";
 import Kenaz from "./Kenaz";
 import NewsLetter from "./NewsLetter";
@@ -18,9 +17,6 @@ function FooterBigRectangle() {
         <Featured />
         <RandomPosts />
         <TwitterFeed />
-      </div>
-      <div className="bot_row">
-        <Bottom />
       </div>
     </div>
   );
